@@ -161,30 +161,25 @@ curl "http://localhost:3000/api/deviation?coin=bitcoin"
 
 ## 🚀 Deployment
 
-### MongoDB Atlas Setup
-1. Create MongoDB Atlas account
-2. Create new cluster
-3. Get connection string
-4. Update MONGO_URI in .env
+### MongoDB Setup
+To set up MongoDB for this project, follow the steps below:
 
-### Deploying to Heroku
-1. Install Heroku CLI
-2. Login to Heroku
-```bash
-heroku login
-```
-3. Create Heroku app
-```bash
-heroku create your-app-name
-```
-4. Set environment variables
-```bash
-heroku config:set MONGO_URI=your_mongodb_uri
-```
-5. Deploy
-```bash
-git push heroku main
-```
+1. **MongoDB Atlas**:
+   - MongoDB Atlas is used for database hosting.
+   - The connection string for MongoDB Atlas is:
+     ```bash
+     mongodb+srv://shashankpant94115:r9AKoAn9u5aqeQg3@cluster0.0zlue.mongodb.net/test
+     ```
+
+   - This connection string is set in the `.env` file under the `MONGO_URI` variable.
+
+### Backend Deployment on Render
+To deploy the backend:
+
+1. The backend has been deployed on Render, and you can access the application at:
+   - **Backend URL**: [https://koinx-l16p.onrender.com](https://koinx-l16p.onrender.com)
+
+2. The backend is connected to MongoDB Atlas using the connection string provided above.
 
 ## 📝 Testing Checklist
 
